@@ -1,3 +1,20 @@
+<?php
+// メニューで表示されるページの内容を返す関数
+function mt_options_page() {
+  // POSTデータがあれば設定を更新
+  if (isset($_POST['my_text'])) {
+    // 更新内容　https://codex.wordpress.org/Function_Reference/update_option#Example
+    update_option('my_text', wp_unslash($_POST['my_text']));
+    update_option('my_textarea', wp_unslash($_POST['my_textarea']));
+    update_option('my_radio', $_POST['my_radio']);
+    update_option('my_select', $_POST['my_select']);
+    // チェックボックスはチェックされないとキーも受け取れないので、ない時は0にする
+    $my_checkbox = isset($_POST['my_checkbox']) ? 1 : 0;
+    update_option('my_checkbox', $my_checkbox);
+  }
+}
+?>
+
 <div class="wrap">
 <h2>設定サンプル</h2>
 <form method="post" action="">
