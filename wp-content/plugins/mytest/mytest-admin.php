@@ -47,5 +47,6 @@ function mt_options_page() {
           </td>
       </tr>
   </table>
+  <?php submit_button(); ?>
 </form>
 </div>
