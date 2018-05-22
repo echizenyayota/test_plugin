@@ -1,0 +1,97 @@
+[21-May-2018 01:44:15 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 15
+[21-May-2018 01:44:15 UTC] PHP Stack trace:
+[21-May-2018 01:44:15 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:44:15 UTC] PHP   2. activate_plugin() /var/www/wordpress/wp-admin/plugins.php:43
+[21-May-2018 01:44:15 UTC] PHP   3. include_once() /var/www/wordpress/wp-admin/includes/plugin.php:555
+[21-May-2018 01:44:16 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 15
+[21-May-2018 01:44:16 UTC] PHP Stack trace:
+[21-May-2018 01:44:16 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:44:16 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:44:16 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[21-May-2018 01:44:16 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 15
+[21-May-2018 01:44:16 UTC] PHP Stack trace:
+[21-May-2018 01:44:16 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:44:16 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:44:16 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[21-May-2018 01:45:32 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:45:32 UTC] PHP Stack trace:
+[21-May-2018 01:45:32 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:45:32 UTC] PHP   2. activate_plugin() /var/www/wordpress/wp-admin/plugins.php:43
+[21-May-2018 01:45:32 UTC] PHP   3. include_once() /var/www/wordpress/wp-admin/includes/plugin.php:555
+[21-May-2018 01:45:33 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:45:33 UTC] PHP Stack trace:
+[21-May-2018 01:45:33 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:45:33 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:45:33 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[21-May-2018 01:45:33 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:45:33 UTC] PHP Stack trace:
+[21-May-2018 01:45:33 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:45:33 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:45:33 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[21-May-2018 01:46:35 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:46:35 UTC] PHP Stack trace:
+[21-May-2018 01:46:35 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:46:35 UTC] PHP   2. activate_plugin() /var/www/wordpress/wp-admin/plugins.php:43
+[21-May-2018 01:46:35 UTC] PHP   3. include_once() /var/www/wordpress/wp-admin/includes/plugin.php:555
+[21-May-2018 01:46:36 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:46:36 UTC] PHP Stack trace:
+[21-May-2018 01:46:36 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:46:36 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:46:36 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[21-May-2018 01:46:36 UTC] PHP Notice:  Undefined variable: menu in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[21-May-2018 01:46:36 UTC] PHP Stack trace:
+[21-May-2018 01:46:36 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[21-May-2018 01:46:36 UTC] PHP   2. plugin_sandbox_scrape() /var/www/wordpress/wp-admin/plugins.php:172
+[21-May-2018 01:46:36 UTC] PHP   3. include() /var/www/wordpress/wp-admin/includes/plugin.php:1897
+[22-May-2018 00:56:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_menu_page() in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16
+Stack trace:
+#0 /var/www/wordpress/wp-settings.php(305): include_once()
+#1 /var/www/wordpress/wp-config.php(77): require_once('/var/www/wordpr...')
+#2 /var/www/wordpress/wp-load.php(37): require_once('/var/www/wordpr...')
+#3 /var/www/wordpress/wp-admin/admin.php(31): require_once('/var/www/wordpr...')
+#4 /var/www/wordpress/wp-admin/plugins.php(10): require_once('/var/www/wordpr...')
+#5 {main}
+  thrown in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[22-May-2018 02:50:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_menu_page() in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16
+Stack trace:
+#0 /var/www/wordpress/wp-settings.php(305): include_once()
+#1 /var/www/wordpress/wp-config.php(77): require_once('/var/www/wordpr...')
+#2 /var/www/wordpress/wp-load.php(37): require_once('/var/www/wordpr...')
+#3 /var/www/wordpress/wp-admin/admin.php(31): require_once('/var/www/wordpr...')
+#4 {main}
+  thrown in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 16
+[22-May-2018 02:55:08 UTC] PHP Parse error:  syntax error, unexpected '');' (T_ENCAPSED_AND_WHITESPACE), expecting ',' or ')' in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 17
+[22-May-2018 03:02:27 UTC] PHP Fatal error:  Cannot redeclare mt_under_media() (previously declared in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16) in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 22
+[22-May-2018 03:02:27 UTC] PHP Stack trace:
+[22-May-2018 03:02:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[22-May-2018 03:02:27 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[22-May-2018 03:02:27 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[22-May-2018 03:02:27 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[22-May-2018 03:02:28 UTC] PHP Fatal error:  Cannot redeclare mt_under_media() (previously declared in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16) in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 22
+[22-May-2018 03:02:28 UTC] PHP Stack trace:
+[22-May-2018 03:02:28 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[22-May-2018 03:02:28 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[22-May-2018 03:02:28 UTC] PHP   3. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[22-May-2018 03:02:28 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[22-May-2018 03:02:28 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
+[22-May-2018 03:03:38 UTC] PHP Fatal error:  Cannot redeclare mt_under_media() (previously declared in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16) in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 25
+[22-May-2018 03:03:38 UTC] PHP Stack trace:
+[22-May-2018 03:03:38 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[22-May-2018 03:03:38 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[22-May-2018 03:03:38 UTC] PHP   3. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[22-May-2018 03:03:38 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[22-May-2018 03:03:38 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
+[22-May-2018 03:03:39 UTC] PHP Fatal error:  Cannot redeclare mt_under_media() (previously declared in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16) in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 25
+[22-May-2018 03:03:39 UTC] PHP Stack trace:
+[22-May-2018 03:03:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[22-May-2018 03:03:39 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[22-May-2018 03:03:39 UTC] PHP   3. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[22-May-2018 03:03:39 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[22-May-2018 03:03:39 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
+[22-May-2018 03:03:54 UTC] PHP Fatal error:  Cannot redeclare mt_under_media() (previously declared in /var/www/wordpress/wp-content/plugins/mytest/mytest.php:16) in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 25
+[22-May-2018 03:03:54 UTC] PHP Stack trace:
+[22-May-2018 03:03:54 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[22-May-2018 03:03:54 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[22-May-2018 03:03:55 UTC] PHP   3. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[22-May-2018 03:03:55 UTC] PHP   4. require_once() /var/www/wordpress/wp-load.php:37
+[22-May-2018 03:03:55 UTC] PHP   5. require_once() /var/www/wordpress/wp-config.php:77
