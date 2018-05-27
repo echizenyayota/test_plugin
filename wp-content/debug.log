@@ -1,0 +1,38 @@
+[27-May-2018 12:47:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 37
+[27-May-2018 12:48:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 37
+[27-May-2018 12:48:44 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'baw_settings_page' not found or invalid function name in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[27-May-2018 12:48:44 UTC] PHP Stack trace:
+[27-May-2018 12:48:44 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin.php:0
+[27-May-2018 12:48:44 UTC] PHP   2. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[27-May-2018 12:48:44 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[27-May-2018 12:48:44 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[27-May-2018 13:00:28 UTC] PHP Warning:  require_once(/var/www/wordpress/wp-content/plugins/mytest/express_admin.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 21
+[27-May-2018 13:00:28 UTC] PHP Stack trace:
+[27-May-2018 13:00:28 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[27-May-2018 13:00:28 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[27-May-2018 13:00:28 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[27-May-2018 13:00:28 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[27-May-2018 13:00:28 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[27-May-2018 13:00:28 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/wordpress/wp-content/plugins/mytest/express_admin.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 21
+[27-May-2018 13:00:28 UTC] PHP Stack trace:
+[27-May-2018 13:00:28 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[27-May-2018 13:00:28 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[27-May-2018 13:00:28 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[27-May-2018 13:00:28 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[27-May-2018 13:00:28 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[27-May-2018 13:01:13 UTC] PHP Warning:  require_once(/var/www/wordpress/wp-content/plugins/mytest/express_admin.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 21
+[27-May-2018 13:01:13 UTC] PHP Stack trace:
+[27-May-2018 13:01:13 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin.php:0
+[27-May-2018 13:01:13 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[27-May-2018 13:01:13 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[27-May-2018 13:01:13 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[27-May-2018 13:01:13 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[27-May-2018 13:01:13 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/wordpress/wp-content/plugins/mytest/express_admin.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 21
+[27-May-2018 13:01:13 UTC] PHP Stack trace:
+[27-May-2018 13:01:13 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin.php:0
+[27-May-2018 13:01:13 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin.php:31
+[27-May-2018 13:01:13 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[27-May-2018 13:01:13 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[27-May-2018 13:01:13 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[27-May-2018 13:01:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php on line 30
+[27-May-2018 13:03:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php on line 5
