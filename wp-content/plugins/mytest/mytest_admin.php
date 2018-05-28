@@ -8,15 +8,15 @@
       <table class="form-table">
         <tr valign="top">
         <th scope="row">New Option Name</th>
-        <td><input type="text" name="new_option_name" value="" /></td>
+        <td><input type="text" name="new_option_name" value="<?php get_option('new_option_name'); ?>" /></td>
         </tr>
         <tr valign="top">
         <th scope="row">Some Other Option</th>
-        <td><input type="text" name="some_other_option" value="" /></td>
+        <td><input type="text" name="some_other_option" value="<?php get_option('some_other_option'); ?>" /></td>
         </tr>
         <tr valign="top">
         <th scope="row">Options, Etc.</th>
-        <td><input type="text" name="option_etc" value="" /></td>
+        <td><input type="text" name="option_etc" value="<?php get_option('option_etc'); ?>" /></td>
         </tr>
       </table>
       <?php submit_button(); ?>
