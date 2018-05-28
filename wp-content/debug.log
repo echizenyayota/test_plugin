@@ -1,0 +1,6 @@
+[28-May-2018 00:30:26 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'test_settings_page' not found or invalid function name in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[28-May-2018 00:30:26 UTC] PHP Stack trace:
+[28-May-2018 00:30:26 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin.php:0
+[28-May-2018 00:30:26 UTC] PHP   2. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[28-May-2018 00:30:26 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[28-May-2018 00:30:26 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
