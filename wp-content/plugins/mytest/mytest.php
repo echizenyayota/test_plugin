@@ -21,3 +21,13 @@ function test_create_menu() {
 	add_action( 'admin_init', 'register_mysettings' );
 }
 add_action('admin_menu', 'test_create_menu');
+
+// コールバック関数
+function register_mysettings() {
+	register_setting( 'test-settings-group', 'new_option_name' );
+	register_setting( 'test-settings-group', 'some_other_option' );
+	register_setting( 'test-settings-group', 'option_etc' );
+}
+
+// 管理画面ファイルの読み込み
+require_once(__DIR__ . '/mytest_admin.php');

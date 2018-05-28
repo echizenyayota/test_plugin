@@ -10,3 +10,23 @@
 [28-May-2018 00:35:41 UTC] PHP   2. do_action() /var/www/wordpress/wp-admin/admin.php:224
 [28-May-2018 00:35:41 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
 [28-May-2018 00:35:41 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[28-May-2018 00:42:44 UTC] PHP Warning:  require_once(/var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php): failed to open stream: No such file or directory in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 33
+[28-May-2018 00:42:44 UTC] PHP Stack trace:
+[28-May-2018 00:42:44 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[28-May-2018 00:42:44 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[28-May-2018 00:42:44 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[28-May-2018 00:42:44 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[28-May-2018 00:42:44 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[28-May-2018 00:42:44 UTC] PHP Fatal error:  require_once(): Failed opening required '/var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php' (include_path='.:/usr/share/php') in /var/www/wordpress/wp-content/plugins/mytest/mytest.php on line 33
+[28-May-2018 00:42:44 UTC] PHP Stack trace:
+[28-May-2018 00:42:44 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin-ajax.php:0
+[28-May-2018 00:42:44 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/admin-ajax.php:22
+[28-May-2018 00:42:44 UTC] PHP   3. require_once() /var/www/wordpress/wp-load.php:37
+[28-May-2018 00:42:44 UTC] PHP   4. require_once() /var/www/wordpress/wp-config.php:77
+[28-May-2018 00:42:44 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
+[28-May-2018 00:44:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'test_settings_page' not found or invalid function name in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[28-May-2018 00:44:05 UTC] PHP Stack trace:
+[28-May-2018 00:44:05 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/admin.php:0
+[28-May-2018 00:44:05 UTC] PHP   2. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[28-May-2018 00:44:05 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[28-May-2018 00:44:05 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
