@@ -1,5 +1,10 @@
 <?php function test_settings_page() { ?>
 
-  <?php echo "Hello World from test_settings_page!"; ?>
+  <div class="wrap">
+    <h2>Your Plugin Page Title</h2>
+    <form method="post" action="options.php">
+    <?php submit_button(); ?>
+    </form>
+  </div>
 
 <?php } ?>
