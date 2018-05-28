@@ -17,5 +17,7 @@ Text Domain: mytest
 function test_create_menu() {
 	//プラグイン設定ページの追加
 	add_menu_page('TEST Plugin Settings', 'TEST Settings', 'administrator', __FILE__, 'test_settings_page',plugins_url('/images/icon.png', __FILE__));
+	// 独自関数をコールバック関数とする
+	add_action( 'admin_init', 'register_mysettings' );
 }
 add_action('admin_menu', 'test_create_menu');
