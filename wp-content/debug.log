@@ -36,3 +36,12 @@
 [27-May-2018 13:01:13 UTC] PHP   5. include_once() /var/www/wordpress/wp-settings.php:305
 [27-May-2018 13:01:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php on line 30
 [27-May-2018 13:03:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /var/www/wordpress/wp-content/plugins/mytest/mytest_admin.php on line 5
+[28-May-2018 10:04:24 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 347
+[28-May-2018 10:04:24 UTC] PHP Stack trace:
+[28-May-2018 10:04:24 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/plugins.php:0
+[28-May-2018 10:04:24 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/plugins.php:10
+[28-May-2018 10:04:24 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:332
+[28-May-2018 10:04:24 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[28-May-2018 10:04:24 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[28-May-2018 10:04:24 UTC] PHP   6. wp_update_plugins() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[28-May-2018 10:04:24 UTC] PHP   7. trigger_error() /var/www/wordpress/wp-includes/update.php:347
