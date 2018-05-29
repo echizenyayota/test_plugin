@@ -90,9 +90,15 @@ class MySettingsPage {
 
   // 各項目のサニタイズをする
   public function sanitize( $input ) {
-
-
-
+    // 入力内容を変換（ID Numberは正の数値にタイトルはサニタイズ）
+    $new_input = array();
+    if( isset( $input['id_number'] ) ){
+      $new_input['id_number'] = absint( $input['id_number'] );
+    }
+    if( isset( $input['title'] ) ){
+      $new_input['title'] = sanitize_text_field( $input['title'] );
+    }
+    return $new_input;
   }
 
 
