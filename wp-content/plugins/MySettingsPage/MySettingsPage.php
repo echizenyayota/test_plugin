@@ -88,6 +88,13 @@ class MySettingsPage {
     );
   }
 
+  // 各項目のサニタイズをする
+  public function sanitize( $input ) {
+
+
+
+  }
+
 
 }
 
