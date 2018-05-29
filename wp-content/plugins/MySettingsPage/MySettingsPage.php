@@ -41,7 +41,6 @@ class MySettingsPage {
    $this->options = get_option( 'my_option_name' );
    ?>
    <div class="wrap">
-       <?php screen_icon(); ?>
        <h2>My Settings</h2>
        <form method="post" action="options.php">
        <?php
