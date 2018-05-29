@@ -106,6 +106,14 @@ class MySettingsPage {
     print 'Enter your settings below:';
   }
 
+  // ID Number用のインプットタグを出力する
+  public function id_number_callback() {
+      printf(
+          '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
+          isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+      );
+  }
+
 
 
 }
