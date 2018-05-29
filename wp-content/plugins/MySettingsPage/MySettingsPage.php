@@ -22,7 +22,7 @@ class MySettingsPage {
     add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
     add_action( 'admin_init', array( $this, 'page_init' ) );
   }
-  
+
   // オプションページの追加
   public function add_plugin_page() {
     // 設定メニューページにサブメニューページを追加する
@@ -33,6 +33,26 @@ class MySettingsPage {
         'my-setting-admin',
         array( $this, 'create_admin_page' ) // 使用するメソッドを明示する
     );
+  }
+
+  // 設定ページの作成
+  public function create_admin_page() {
+   // my_option_nameをoptionsのプロパティとする
+   $this->options = get_option( 'my_option_name' );
+   ?>
+   <div class="wrap">
+       <h2>My Settings</h2>
+       <form method="post" action="options.php">
+       <?php
+           // 設定項目の表示
+           settings_fields( 'my_option_group' );
+           do_settings_sections( 'my-setting-admin' );
+           // 保存して送信
+           submit_button();
+       ?>
+       </form>
+   </div>
+   <?php
   }
 
 
