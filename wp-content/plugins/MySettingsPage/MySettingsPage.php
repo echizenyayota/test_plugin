@@ -17,6 +17,12 @@ class MySettingsPage {
   // プロパティ（フィールドコールバックで使用される値を保持）
   private $options;
 
+  // 初期化（コンストラクタ。クラス内でadd_actionを使う場合は、array($this, ‘メソッド’)とする）
+  public function __construct() {
+    add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
+    add_action( 'admin_init', array( $this, 'page_init' ) );
+  }
+
 
 }
 
