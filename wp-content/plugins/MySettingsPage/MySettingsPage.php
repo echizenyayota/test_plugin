@@ -26,4 +26,4 @@ class MySettingsPage {
 
 }
 
-require(__DIR__ . 'MySettingsPage_admin.php');
+require(__DIR__ . '/MySettingsPage_admin.php');
