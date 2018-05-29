@@ -25,14 +25,34 @@ class MySettingsPage {
 
   // オプションページの追加
   public function add_plugin_page()　{
-   // This page will be under "Settings"
+   // 設定メニューページにサブメニューページを追加する
    add_options_page(
        'Settings Admin',
        'My Settings',
        'manage_options',
        'my-setting-admin',
-       array( $this, 'create_admin_page' )
+       array( $this, 'create_admin_page' ), // 使用するメソッドを明示する
    );
+  }
+
+  // 設定ページの作成
+  public function create_admin_page() {
+   // Set class property
+   $this->options = get_option( 'my_option_name' );
+   ?>
+   <div class="wrap">
+       <?php screen_icon(); ?>
+       <h2>My Settings</h2>
+       <form method="post" action="options.php">
+       <?php
+           // This prints out all hidden setting fields
+           settings_fields( 'my_option_group' );
+           do_settings_sections( 'my-setting-admin' );
+           submit_button();
+       ?>
+       </form>
+   </div>
+   <?php
   }
 
 
