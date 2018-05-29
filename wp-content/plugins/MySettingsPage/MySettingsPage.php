@@ -101,6 +101,12 @@ class MySettingsPage {
     return $new_input;
   }
 
+  // 設定項目の内容をお知らせ
+  public function print_section_info() {
+    print 'Enter your settings below:';
+  }
+
+
 
 }
 

@@ -234,3 +234,52 @@
 [29-May-2018 05:52:52 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
 [29-May-2018 05:52:52 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
 [29-May-2018 05:52:52 UTC] PHP   8. do_settings_fields() /var/www/wordpress/wp-admin/includes/template.php:1337
+[29-May-2018 05:55:57 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'print_section_info' in /var/www/wordpress/wp-admin/includes/template.php on line 1332
+[29-May-2018 05:55:57 UTC] PHP Stack trace:
+[29-May-2018 05:55:57 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[29-May-2018 05:55:57 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[29-May-2018 05:55:57 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[29-May-2018 05:55:57 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:55:57 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:55:57 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:55:57 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
+[29-May-2018 05:55:57 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'id_number_callback' in /var/www/wordpress/wp-admin/includes/template.php on line 1378
+[29-May-2018 05:55:57 UTC] PHP Stack trace:
+[29-May-2018 05:55:57 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[29-May-2018 05:55:57 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[29-May-2018 05:55:57 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[29-May-2018 05:55:57 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:55:57 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:55:57 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:55:57 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
+[29-May-2018 05:55:57 UTC] PHP   8. do_settings_fields() /var/www/wordpress/wp-admin/includes/template.php:1337
+[29-May-2018 05:55:57 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'title_callback' in /var/www/wordpress/wp-admin/includes/template.php on line 1378
+[29-May-2018 05:55:57 UTC] PHP Stack trace:
+[29-May-2018 05:55:57 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[29-May-2018 05:55:57 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[29-May-2018 05:55:57 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[29-May-2018 05:55:57 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:55:57 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:55:57 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:55:57 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
+[29-May-2018 05:55:57 UTC] PHP   8. do_settings_fields() /var/www/wordpress/wp-admin/includes/template.php:1337
+[29-May-2018 05:56:39 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'id_number_callback' in /var/www/wordpress/wp-admin/includes/template.php on line 1378
+[29-May-2018 05:56:39 UTC] PHP Stack trace:
+[29-May-2018 05:56:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[29-May-2018 05:56:39 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[29-May-2018 05:56:39 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[29-May-2018 05:56:39 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:56:39 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:56:39 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:56:39 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
+[29-May-2018 05:56:39 UTC] PHP   8. do_settings_fields() /var/www/wordpress/wp-admin/includes/template.php:1337
+[29-May-2018 05:56:39 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'title_callback' in /var/www/wordpress/wp-admin/includes/template.php on line 1378
+[29-May-2018 05:56:39 UTC] PHP Stack trace:
+[29-May-2018 05:56:39 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/options-general.php:0
+[29-May-2018 05:56:39 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/options-general.php:10
+[29-May-2018 05:56:39 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:224
+[29-May-2018 05:56:39 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:56:39 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:56:39 UTC] PHP   6. MySettingsPage->create_admin_page() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:56:39 UTC] PHP   7. do_settings_sections() /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php:49
+[29-May-2018 05:56:39 UTC] PHP   8. do_settings_fields() /var/www/wordpress/wp-admin/includes/template.php:1337
