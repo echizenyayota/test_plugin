@@ -55,6 +55,11 @@ class MySettingsPage {
    <?php
   }
 
+  // ページの初期化
+  public function page_init() {
+
+  }
+
 
 }
 
