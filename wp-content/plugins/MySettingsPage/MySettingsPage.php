@@ -14,6 +14,10 @@ Text Domain: mytest
 */
 class MySettingsPage {
 
+  // プロパティ（フィールドコールバックで使用される値を保持）
+  private $options;
+
+
 }
 
 require(__DIR__ . 'MySettingsPage_admin.php');
