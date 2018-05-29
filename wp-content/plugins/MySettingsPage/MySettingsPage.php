@@ -37,7 +37,7 @@ class MySettingsPage {
 
   // 設定ページの作成
   public function create_admin_page() {
-   // Set class property
+   // my_option_nameをoptionsのプロパティとする
    $this->options = get_option( 'my_option_name' );
    ?>
    <div class="wrap">
@@ -45,9 +45,10 @@ class MySettingsPage {
        <h2>My Settings</h2>
        <form method="post" action="options.php">
        <?php
-           // This prints out all hidden setting fields
+           // 設定項目の表示
            settings_fields( 'my_option_group' );
            do_settings_sections( 'my-setting-admin' );
+           // 保存して送信
            submit_button();
        ?>
        </form>
