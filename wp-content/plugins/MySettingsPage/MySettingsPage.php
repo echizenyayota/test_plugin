@@ -23,6 +23,17 @@ class MySettingsPage {
     add_action( 'admin_init', array( $this, 'page_init' ) );
   }
 
+  public function add_plugin_page() {
+    // 設定メニューページにサブメニューページを追加する
+    add_options_page(
+        'Settings Admin',
+        'My Settings',
+        'manage_options',
+        'my-setting-admin',
+        array( $this, 'create_admin_page' ) // 使用するメソッドを明示する
+    );
+  }
+
 
 }
 

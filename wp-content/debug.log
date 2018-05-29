@@ -133,3 +133,56 @@
 [29-May-2018 05:27:05 UTC] PHP   2. do_action() /var/www/wordpress/wp-admin/admin-ajax.php:44
 [29-May-2018 05:27:05 UTC] PHP   3. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
 [29-May-2018 05:27:05 UTC] PHP   4. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:28:23 UTC] PHP Parse error:  syntax error, unexpected '　' (T_STRING), expecting ';' or '{' in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 26
+[29-May-2018 05:28:24 UTC] PHP Parse error:  syntax error, unexpected '　' (T_STRING), expecting ';' or '{' in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 26
+[29-May-2018 05:29:57 UTC] PHP Parse error:  syntax error, unexpected '　' (T_STRING), expecting ';' or '{' in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 26
+[29-May-2018 05:30:14 UTC] PHP Parse error:  syntax error, unexpected '　' (T_STRING), expecting ';' or '{' in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 26
+[29-May-2018 05:30:40 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 41
+[29-May-2018 05:31:36 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 29
+[29-May-2018 05:31:52 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /var/www/wordpress/wp-content/plugins/MySettingsPage/MySettingsPage.php on line 29
+[29-May-2018 05:32:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'add_plugin_page' in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[29-May-2018 05:32:50 UTC] PHP Stack trace:
+[29-May-2018 05:32:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:32:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:32:50 UTC] PHP   3. require() /var/www/wordpress/wp-admin/admin.php:140
+[29-May-2018 05:32:50 UTC] PHP   4. require_once() /var/www/wordpress/wp-admin/menu.php:294
+[29-May-2018 05:32:50 UTC] PHP   5. do_action() /var/www/wordpress/wp-admin/includes/menu.php:149
+[29-May-2018 05:32:50 UTC] PHP   6. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:32:50 UTC] PHP   7. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:32:50 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'page_init' in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[29-May-2018 05:32:50 UTC] PHP Stack trace:
+[29-May-2018 05:32:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:32:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:32:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[29-May-2018 05:32:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:32:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:32:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/wordpress/wp-includes/class-wp-hook.php:286) in /var/www/wordpress/wp-admin/includes/misc.php on line 1116
+[29-May-2018 05:32:50 UTC] PHP Stack trace:
+[29-May-2018 05:32:50 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:32:50 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:32:50 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[29-May-2018 05:32:50 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:32:50 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:32:50 UTC] PHP   6. wp_admin_headers() /var/www/wordpress/wp-includes/class-wp-hook.php:286
+[29-May-2018 05:32:50 UTC] PHP   7. header() /var/www/wordpress/wp-admin/includes/misc.php:1116
+[29-May-2018 05:33:08 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'page_init' in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[29-May-2018 05:33:08 UTC] PHP Stack trace:
+[29-May-2018 05:33:08 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:33:08 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:33:08 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[29-May-2018 05:33:08 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:33:08 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:33:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'page_init' in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[29-May-2018 05:33:38 UTC] PHP Stack trace:
+[29-May-2018 05:33:38 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:33:38 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:33:38 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[29-May-2018 05:33:38 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:33:38 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
+[29-May-2018 05:34:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'MySettingsPage' does not have a method 'page_init' in /var/www/wordpress/wp-includes/class-wp-hook.php on line 286
+[29-May-2018 05:34:27 UTC] PHP Stack trace:
+[29-May-2018 05:34:27 UTC] PHP   1. {main}() /var/www/wordpress/wp-admin/index.php:0
+[29-May-2018 05:34:27 UTC] PHP   2. require_once() /var/www/wordpress/wp-admin/index.php:10
+[29-May-2018 05:34:27 UTC] PHP   3. do_action() /var/www/wordpress/wp-admin/admin.php:156
+[29-May-2018 05:34:27 UTC] PHP   4. WP_Hook->do_action() /var/www/wordpress/wp-includes/plugin.php:453
+[29-May-2018 05:34:27 UTC] PHP   5. WP_Hook->apply_filters() /var/www/wordpress/wp-includes/class-wp-hook.php:310
