@@ -38,7 +38,6 @@ class MySettingsPage {
    // my_option_nameをoptionsのプロパティとする
    $this->options = get_option( 'my_option_name' );
    ?>
-   <?php var_dump($this->options); ?>
    <div class="wrap">
        <h2>My Settings</h2>
        <form method="post" action="options.php">
@@ -54,6 +53,9 @@ class MySettingsPage {
    <?php
   }
 
+  public function page_init() {
+    
+  }
 
 }
 
