@@ -54,8 +54,41 @@ class MySettingsPage {
   }
 
   public function page_init() {
-    
+    // 設定項目と無害化用コールバックの登録
+    register_setting(
+      'my_option_group',
+      'my_option_name',
+      array( $this, 'sanitize' )
+    );
+
+    // 設定をまとめる
+    add_settings_section(
+      'setting_section_id',
+      'My Custom Settings',
+      array( $this, 'print_section_info' ),
+      'my-setting-admin'
+    );
+
+    // 設定項目の追加(ID Number)
+    add_settings_field(
+      'id_number', // ID
+      'ID Number', // Title
+      array( $this, 'id_number_callback' ),
+      'my-setting-admin',
+      'setting_section_id'
+    );
+
+    // 設定項目の追加(Title)
+    add_settings_field(
+      'title',
+      'Title',
+      array( $this, 'title_callback' ),
+      'my-setting-admin',
+      'setting_section_id'
+    );
+
   }
+
 
 }
 
