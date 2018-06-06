@@ -86,9 +86,42 @@ class MySettingsPage {
       'my-setting-admin',
       'setting_section_id'
     );
-
   }
 
+  public function sanitize( $input ) {
+    $new_input = array();
+    // 入力値を絶対値の数値にする
+    if( isset( $input['id_number'] ) ){
+      $new_input['id_number'] = absint( $input['id_number'] );
+    }
+    // 特殊文字のサニタイズ
+    if( isset( $input['title'] ) ){
+      $new_input['title'] = sanitize_text_field( $input['title'] );
+    }
+    // 配列値で結果を返す
+    return $new_input;
+  }
+
+  public function print_section_info() {
+    // 文字列の出力
+    print 'Enter your settings below:';
+  }
+
+  public function id_number_callback() {
+    // ID用のinputタグを出力する
+    printf(
+        '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
+        isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+    );
+  }
+
+  public function title_callback() {
+    // Title用のinputタグを出力する
+    printf(
+        '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
+        isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
+    );
+  }
 
 }
 
