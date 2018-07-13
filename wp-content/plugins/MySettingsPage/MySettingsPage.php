@@ -12,3 +12,9 @@ Author URI: https://e-yota.com
 License: GPLv2 or later
 Text Domain: mytest
 */
+
+class MySettingsPage {
+
+}
+
+require(__DIR__ . '/MySettingsPage_admin.php');
