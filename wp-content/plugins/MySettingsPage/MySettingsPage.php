@@ -37,7 +37,7 @@ class MySettingsPage {
 
   // 設定ページの表示
   public function create_admin_page() {
-    // my_option_nameをoptionsのプロパティとする
+    // my_option_nameをoptionsのプロパティとする →　option_nameカラムにmy_option_nameが入力される
    $this->options = get_option( 'my_option_name' );
    ?>
    <div class="wrap">
@@ -87,10 +87,23 @@ class MySettingsPage {
         );
   }
 
+  // 入力項目のサニタイズ
+  public function sanitize( $input ) {
+    $new_input = array();
+        if( isset( $input['id_number'] ) )
+            $new_input['id_number'] = absint( $input['id_number'] );
+        if( isset( $input['title'] ) )
+            $new_input['title'] = sanitize_text_field( $input['title'] );
+
+        return $new_input;
+  }
+
+  // 入力を促す文字列の出力
   public function print_section_info() {
     print 'Enter your settings below:';
   }
 
+  // IDの入力
   public function id_number_callback() {
     printf(
             '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
@@ -98,6 +111,7 @@ class MySettingsPage {
         );
     }
 
+  // タイトルの入力
   public function title_callback() {
     printf(
             '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
