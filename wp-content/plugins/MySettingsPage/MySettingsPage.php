@@ -21,9 +21,10 @@ class MySettingsPage {
   // コンストラクタ
   public function __construct() {
     add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
+    add_action( 'admin_init', array( $this, 'page_init' ) );
   }
 
-  // // 設定メニューページにサブメニューページを追加する
+  // 設定メニューページにサブメニューページを追加する
   public function add_plugin_page() {
     add_options_page(
         'Settings Admin',
@@ -34,6 +35,7 @@ class MySettingsPage {
     );
   }
 
+  // 設定ページの表示
   public function create_admin_page() {
     // my_option_nameをoptionsのプロパティとする
    $this->options = get_option( 'my_option_name' );
@@ -51,6 +53,38 @@ class MySettingsPage {
        </form>
    </div>
    <?php
+  }
+
+  // 設定項目の初期化
+  public function page_init() {
+    register_setting(
+            'my_option_group', // Option group
+            'my_option_name', // Option name
+            array( $this, 'sanitize' ) // Sanitize
+        );
+
+        add_settings_section(
+            'setting_section_id', // ID
+            'My Custom Settings', // Title
+            array( $this, 'print_section_info' ), // Callback
+            'my-setting-admin' // Page
+        );
+
+        add_settings_field(
+            'id_number', // ID
+            'ID Number', // Title
+            array( $this, 'id_number_callback' ), // Callback
+            'my-setting-admin', // Page
+            'setting_section_id' // Section
+        );
+
+        add_settings_field(
+            'title',
+            'Title',
+            array( $this, 'title_callback' ),
+            'my-setting-admin',
+            'setting_section_id'
+        );      
   }
 
 
